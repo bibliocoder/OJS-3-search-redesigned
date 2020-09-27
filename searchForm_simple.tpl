@@ -26,10 +26,12 @@
 		</button>
 		<div class="search_controls" aria-hidden="true">
 			<a href="{url page="search" op="search"}" class="headerSearchPrompt search_prompt" aria-hidden="true">
-				{translate key="common.search"}
 			</a>
 			<a href="#" class="search_cancel headerSearchCancel" aria-hidden="true"></a>
 			<span class="search_loading" aria-hidden="true"></span>
+		</div>
+		<div class="search_controls">
+  			<a href="{url page="search"}" class="search_prompt_advanced" aria-hidden="true">Advanced Search</a>
 		</div>
 	</form>
 {/if}
