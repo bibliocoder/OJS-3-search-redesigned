@@ -1,0 +1,47 @@
+@media (min-width:992px) {
+    .pkp_search_desktop .search_prompt_advanced {
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px;
+        color: #fff;
+        cursor: pointer
+    }
+    .pkp_search_desktop .search_prompt_advanced:before {
+        font-size: 16px;
+        margin-right: 0.25em
+    }
+    .pkp_search_desktop .search_prompt_advanced:hover,
+    .pkp_search_desktop .search_prompt_advanced:focus {
+        outline: 0;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #fff
+    }
+    .pkp_search_desktop.is_open .search_prompt_advanced {
+        padding-bottom: 9px;
+        background: #fff;
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        color: #007ab2
+    }
+    .pkp_search_desktop.is_open .search_prompt_advanced:hover,
+    .pkp_search_desktop.is_open .search_prompt_advanced:focus {
+        border-bottom-color: #007ab2
+    }
+    .pkp_search_desktop.is_searching input[type="text"] {
+        opacity: 0.5
+    }
+    .pkp_search_desktop.is_searching input[type="text"]:hover,
+    .pkp_search_desktop.is_searching input[type="text"]:focus {
+        border-color: #fff
+    }
+    .pkp_search_desktop.is_searching .search_prompt_advanced {
+        background: #fff;
+        border-left: 1px solid #ddd;
+        color: #007ab2
+    }
+    .pkp_search_desktop.is_searching .search_prompt_advanced:hover,
+    .pkp_search_desktop.is_searching .search_prompt_advanced:focus {
+        background: #fff;
+        color: #009de5
+    }
+}
