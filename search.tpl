@@ -100,10 +100,12 @@
 
 	{* No results found *}
 	{if $results->wasEmpty()}
-		{if $error}
-			{include file="frontend/components/notification.tpl" type="error" message=$error|escape}
-		{else}
-			{include file="frontend/components/notification.tpl" type="notice" messageKey="search.noResults"}
+		{if $query}
+			{if $error}
+				{include file="frontend/components/notification.tpl" type="error" message=$error|escape}
+			{else}
+				{include file="frontend/components/notification.tpl" type="notice" messageKey="search.noResults"}
+			{/if}
 		{/if}
 
 	{* Results pagination *}
